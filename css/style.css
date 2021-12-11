@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Playfair Display', serif;
+}
+
+.intro-image{
+    background-image: url("../img/image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.intro-image__text{
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    animation-name: moveDown;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveDown {
+    0%{transform: translateY(-1000px);}
+}
+
+.intro-image__text a{
+    color: #1d1914;
+    background-color: #cfbb9bb6;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.intro-image__text a:hover{
+    transform: scale(1.2);
+}
+
+.intro-text{
+    height: 150px;
+    padding: 0 15rem;
+    margin-top: -1.2rem;
+    background-color: #b28b4b;
+    color: #22282a;
+    text-align: center;
+    clip-path: polygon(100% 12%, 100% 100%, 0 88%, 0 0);
+
+}
+
+.intro-text__textbox h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.packaging-image{
+    height: 300px;
+    margin-top: -1.2rem;
+    background-image: url("../img/image2.jpg");
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.packaging-image__text{
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    animation-name: moveRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveRight {
+    0%{transform: translateX(-1000px);}
+}
+
+.packaging-image__text a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #c5ab9ca9;
+    color: #4b4233;
+    transition: all 0.5s ease-in-out;
+}
+
+.packaging-image__text a:hover{
+    transform: scale(1.2);
+}
+
+.packaging-text{
+    height: 200px;
+    padding: 0 15rem;
+    margin-top: -1.5rem;
+    background-color: #b7a081;
+    color: #4b4233;
+    text-align: center;
+    clip-path: polygon(100% 12%, 100% 100%, 0 88%, 0 0);
+}
+
+.packaging-text h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tutorials-image{
+    height: 250px;
+    margin-top: -1.5rem;
+    background-image: url("../img/image3.jpg");
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.tutorials-image__text{
+    text-align: center;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    animation-name: moveLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveLeft {
+    0%{transform: translateX(1000px);}
+}
+
+.tutorials-image a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #d6c4a7be;
+    color: #2a2116;
+    transition: all 0.5s ease-in-out;
+}
+
+.tutorials-image a:hover{
+    transform: scale(1.2);
+}
+
+.footer{
+    height: 110px;
+    background-color: #828386;
+    color: #dbc092;
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a{
+    color: #dbc092;
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover{
+    transform: scale(1.2);
+    color: #b28b4b;
+}
